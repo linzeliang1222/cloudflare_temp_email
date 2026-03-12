@@ -34,9 +34,12 @@ export const useGlobalState = createGlobalState(
             cfTurnstileSiteKey: '',
             enableWebhook: false,
             isS3Enabled: false,
+            enableSendMail: false,
             showGithub: true,
             disableAdminPasswordCheck: false,
             enableAddressPassword: false,
+            statusUrl: '',
+            enableGlobalTurnstileCheck: false,
         })
         const settings = ref({
             fetched: false,
@@ -83,7 +86,7 @@ export const useGlobalState = createGlobalState(
             fetched: false,
             enable: false,
             enableMailVerify: false,
-            /** @type {{ clientID: string, name: string }[]} */
+            /** @type {{ clientID: string, name: string, icon?: string }[]} */
             oauth2ClientIDs: [],
         });
         const userSettings = ref({

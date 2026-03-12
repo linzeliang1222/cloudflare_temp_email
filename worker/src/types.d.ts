@@ -47,6 +47,7 @@ type Bindings = {
     NO_LIMIT_SEND_ROLE: string | undefined | null
     ADMIN_CONTACT: string | undefined
     COPYRIGHT: string | undefined
+    STATUS_URL: string | undefined
     DISABLE_SHOW_GITHUB: string | boolean | undefined
     FORWARD_ADDRESS_LIST: string | string[] | undefined
 
@@ -92,6 +93,9 @@ type Bindings = {
     // AI extraction config
     ENABLE_AI_EMAIL_EXTRACT: string | boolean | undefined
     AI_EXTRACT_MODEL: string | undefined
+
+    // E2E testing
+    E2E_TEST_MODE: string | boolean | undefined
 }
 
 type JwtPayload = {
